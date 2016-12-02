@@ -158,7 +158,27 @@
                                     <constraint firstAttribute="width" constant="215" id="sSs-nj-fwW"/>
                                 </constraints>
                                 <state key="normal" title="BuyNowBtn" image="buyNowBtn"/>
+                                <connections>
+                                    <action selector="buyNowPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cu0-CX-n0D"/>
+                                </connections>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GnK-gl-Vf5" userLabel="successView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="zn5-Qe-qYt" userLabel="successimg">
+                                        <rect key="frame" x="87" y="304" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="qcV-Si-R2O"/>
+                                            <constraint firstAttribute="height" constant="128" id="wB5-5y-w0J"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="zn5-Qe-qYt" firstAttribute="centerY" secondItem="GnK-gl-Vf5" secondAttribute="centerY" id="00A-L1-wVD"/>
+                                    <constraint firstItem="zn5-Qe-qYt" firstAttribute="centerX" secondItem="GnK-gl-Vf5" secondAttribute="centerX" id="BgC-09-Nlj"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -181,9 +201,13 @@
                             <constraint firstItem="emS-pU-aYw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="GJu-p0-kty"/>
                             <constraint firstItem="g8o-4L-gaj" firstAttribute="top" secondItem="fsY-Ip-QLJ" secondAttribute="bottom" constant="6" id="GOL-mm-HvU"/>
                             <constraint firstItem="kPY-dO-1Nj" firstAttribute="trailing" secondItem="rnX-Nc-LCT" secondAttribute="trailing" id="H5q-mN-3Fu"/>
+                            <constraint firstItem="GnK-gl-Vf5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IPj-v5-uyR"/>
                             <constraint firstItem="kPY-dO-1Nj" firstAttribute="top" secondItem="rnX-Nc-LCT" secondAttribute="bottom" constant="10" id="JF8-Rs-Q07"/>
                             <constraint firstItem="fsY-Ip-QLJ" firstAttribute="trailing" secondItem="c2w-ya-7AP" secondAttribute="trailing" id="MNk-58-AaN"/>
+                            <constraint firstAttribute="trailing" secondItem="GnK-gl-Vf5" secondAttribute="trailing" id="Nnp-uj-LEc"/>
+                            <constraint firstItem="GnK-gl-Vf5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Nze-lA-syk"/>
                             <constraint firstItem="ROx-Uq-bGn" firstAttribute="top" secondItem="O7Q-6g-QJA" secondAttribute="bottom" constant="8" id="PwE-VD-Nbg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GnK-gl-Vf5" secondAttribute="bottom" id="R1i-AF-Kkl"/>
                             <constraint firstItem="ROx-Uq-bGn" firstAttribute="trailing" secondItem="GPd-4B-CSv" secondAttribute="trailing" id="Tnv-TI-ZG8"/>
                             <constraint firstItem="XrK-gS-aCw" firstAttribute="leading" secondItem="6Fk-P8-GQW" secondAttribute="leading" id="TtM-2S-aE3"/>
                             <constraint firstItem="g8o-4L-gaj" firstAttribute="leading" secondItem="fsY-Ip-QLJ" secondAttribute="leading" id="UzY-SF-xKA"/>
@@ -200,6 +224,7 @@
                             <constraint firstItem="GPd-4B-CSv" firstAttribute="top" secondItem="xf9-oW-B2a" secondAttribute="bottom" constant="10" id="jRK-sX-ifn"/>
                             <constraint firstItem="rnX-Nc-LCT" firstAttribute="leading" secondItem="ZmY-rR-9qg" secondAttribute="leading" id="kSB-aR-Af8"/>
                             <constraint firstItem="Ip0-db-9Uw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m8w-9K-fXh"/>
+                            <constraint firstItem="GnK-gl-Vf5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mjm-M3-2fn"/>
                             <constraint firstItem="rnX-Nc-LCT" firstAttribute="trailing" secondItem="ZmY-rR-9qg" secondAttribute="trailing" id="np2-gB-qTA"/>
                             <constraint firstItem="g8o-4L-gaj" firstAttribute="trailing" secondItem="fsY-Ip-QLJ" secondAttribute="trailing" id="nvD-q5-e0r"/>
                             <constraint firstItem="Ip0-db-9Uw" firstAttribute="top" secondItem="x77-q0-ZGJ" secondAttribute="bottom" constant="8" id="o7s-dm-FMQ"/>
@@ -208,6 +233,7 @@
                             <constraint firstItem="rnX-Nc-LCT" firstAttribute="top" secondItem="ZmY-rR-9qg" secondAttribute="bottom" constant="6" id="pC3-R3-4i9"/>
                             <constraint firstItem="x77-q0-ZGJ" firstAttribute="top" secondItem="ZbQ-sf-cxY" secondAttribute="bottom" constant="8" id="pIt-m7-vgI"/>
                             <constraint firstItem="hYt-9K-hsb" firstAttribute="centerX" secondItem="g8o-4L-gaj" secondAttribute="centerX" id="pbF-vh-5Ys"/>
+                            <constraint firstItem="GnK-gl-Vf5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="t1m-iM-K81"/>
                             <constraint firstItem="ZbQ-sf-cxY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tOH-6T-fUR"/>
                             <constraint firstItem="XrK-gS-aCw" firstAttribute="top" secondItem="6Fk-P8-GQW" secondAttribute="bottom" constant="10" id="uNX-fB-owh"/>
                             <constraint firstItem="6Fk-P8-GQW" firstAttribute="trailing" secondItem="kPY-dO-1Nj" secondAttribute="trailing" id="vWT-2N-9sL"/>
@@ -230,6 +256,7 @@
                     <connections>
                         <outlet property="statePicker" destination="O7Q-6g-QJA" id="DHd-k2-vcM"/>
                         <outlet property="statePickerBtn" destination="IfV-9j-ILr" id="Jjp-oq-gwj"/>
+                        <outlet property="successView" destination="GnK-gl-Vf5" id="T31-LE-WTQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -240,5 +267,6 @@
     <resources>
         <image name="buyNowBtn" width="225" height="45"/>
         <image name="miraclePillEmoji" width="90" height="90"/>
+        <image name="successIndicator" width="180" height="180"/>
     </resources>
 </document>
